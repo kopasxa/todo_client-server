@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>To Do list</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="container center">
+                <div class="wrapper">
+                    <h1>ToDo App</h1>
+                    <p class="description">The app was created for the gamedev studio <a
+                            href="https://www.n-ix.com/game-vr-studio/"
+                            target="_blank">https://www.n-ix.com/game-vr-studio</a> </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container center">
+                <div class="wrapper">
+                    <div class="formCreaateTask">
+                        <form action="POST" id="formForCreateTask">
+                            <div class="errors">
+
+                            </div>
+                            <input name="task_name" required type="text" placeholder="Task name">
+                            <textarea name="task_description" required placeholder="Task description"></textarea>
+                            <input type="button" value="Add task" id="create_task">
+                        </form>
+                    </div>
+
+                    <div class="allTasks">
+                        <ol class="list" id="list">
+                            <div class="wrapper">
+                                <div class="lds-ring">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
