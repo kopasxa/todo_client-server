@@ -1,9 +1,7 @@
 <?php
 require('db_connect.php');
 
-$sql = "
-        SELECT * FROM `task`;
-    ";
+$sql = "SELECT * FROM `task`;";
 
 $stmt = $conn->prepare($sql);
 $stmt->execute();
